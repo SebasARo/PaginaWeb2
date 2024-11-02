@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box; 
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+    
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-main{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*-------------------------------------HEADER--------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #EB5757; 
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.629), hsla(0, 79%, 63%, 0.61)), url(../Recursos/img/Fondo-wade.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.629), hsla(0, 79%, 63%, 0.61)), url(../Recursos/img/Fondo-wade.jpg); 
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+.menu{
+    text-align: right;
+    margin: 0 20px 0 0;
+}
+header .menu a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    margin: 40px 40px 0 0;
+ display: inline-block;
+ border-bottom: 3px solid transparent;
+ padding-bottom: 10px;
+ padding-top: 10px;
+ font-size: 1.2rem;
+ transition: 0.4s;
+}
+header .menu a:hover{
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+.titulo{
+    color: rgb(104, 104, 227);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    text-align: center;
+    /* margin: 10px 0; */
+}
+
+.contenedor-texto .texto{
+    display:inline-block;
+    text-align: center;
+    padding: 20px 60px;
+    color: white;
+    font-weight: 300;
+}
+.contenedor-texto .texto h1{
+    font-size: 2rem;
+}
+.contenedor-texto .texto p{
+    font-size:  1.4rem;
+    line-height: 2rem; 
+}
+
+/*------------------------------------------Servicios-------------------------------------------*/
+
+main .titulo{
+padding: 3rem;
+}
+
+main .contenedor{
+    text-align: center;
+}
+
+.contenedor .logo{
+    margin-top: 20px;
+ 
+}
+.contenedor-servicio{
+    display: flex;
+      justify-content: center; 
+     align-items: center; 
+    align-content: center; 
+   margin: 13px;
+  
+}
+
+.contenedor-main{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center; 
+justify-content: center;
+margin: 2px 19px 0 19px;
+width: 300px;
+overflow: hidden;
+}
+ .contenedor-main:hover{
+    transform: scale(1.2);
+    transition: 1s;
+} 
+.icono-text{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.icono-text h2{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.icono-text p{
+    padding: 0.6rem;
+    line-height: 1.5rem;
+}
+
+/*------------------------------------------PRODUCTOS-------------------------------------*/
+
+.producto{
+    background: #f2f2f2;
+}
+
+.galeria-pro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.galeria-pro p{
+    font-size: 22px;
+}
+
+.imagen-pro{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, .7)
+}
+.imagen-pro > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.producto-texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+     transform: scale(0);
+    background-color: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.producto-texto p{
+    color: white;
+    padding: 1rem;
+}
+.producto-texto h2{
+color: white;
+padding: 1rem;
+}
+
+.producto-texto a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    width: 100px;
+}
+.imagen-pro:hover .producto-texto{
+    transform: scale(1);
+}
+/*----------------------------------------------Formulario--------------------------------------*/
+
+.contactos{
+     background: #5D4157; 
+    background: -webkit-linear-gradient(to right, #a8cabae3,  #574052);  ;
+    background: linear-gradient(to right, #a8cabae3,  #574052);   
+}
+
+ .acercade-cont{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+   display: grid; 
+  margin-top: 40px;
+} 
+form{
+    height: 500px;
+
+}
+.contenido{
+    width: 600px;
+    margin: auto; 
+    background: rgba(0, 0, 0, 0.532);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 1px;
+}
+.contactos h2{
+ color: white;
+ text-align: center;
+ margin-bottom: 0;
+ font-size: 30px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+}
+
+textarea {
+ min-height: 100px;
+ max-height: 150px;
+ max-width: 100%;
+}
+
+.boton{
+    background: #6075ac;
+    color: white;
+    padding: 20px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+/*--------------------------------------------Pie_Pagina------------------------------------*/
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-pagina{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content:space-evenly;
+    padding-bottom: 40px;
+}
+.enlace{
+     padding: 1rem; 
+    color: white;
+    
+}
+.pie-pagina{
+    text-align: center; 
+}
+.pie-pagina img{
+    text-align: center;
+    margin: 7px;
+}
+.pie-cont{
+    padding: 1rem;
+    color: white;
+}
+.enlace-inicio{
+    color: white;
+    height: 100%;
+}
+
+.Acercade a{
+    color: white;
+}
+
+.footer-pagina{
+    border-bottom: 3px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.final{
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0 0 0;
+    color:#a49494 ;
+}
